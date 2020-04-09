@@ -10,7 +10,7 @@ html,body{
 /*------------------------------TitleBar--------*/
 
 .title-bar{
-    margin: 30px 0 30px 0;
+    margin: 40px 0 40px 0;
     text-align: center;
     position: relative;
 }
@@ -24,20 +24,20 @@ html,body{
 /*------------------------------NavBar--------*/
 
 .navbar {
-    height: 50px;    
+    font-size: 14px;
+    height: 25px;    
     position: relative;
     margin-bottom: 0;
     border-top: 1px solid lightgrey;
     border-bottom: 1px solid lightgrey;
     background-color: #fff;
-    max-width: 1200px;
 }
 
 .navbar-nav{
     margin: 0 auto 0 auto;
 }
 
-.navbar-nav a{
+.navbar-nav a{                   /*required media query below 800px*/
     margin: 0 30px 0 30px;
     color: #e7e4eb;
     text-transform: uppercase;
@@ -49,11 +49,43 @@ html,body{
 
 }
 
-.nav-top a:active{       /*------------------------------------------*/
-    color: #342a42;
-}
-
 .navbar .nav-item .current{
     font-weight: 400;
 }
 
+.nav-menu-wrapper{
+    text-align: center;
+}
+
+
+/*------------------------------Main Img--------*/
+
+.main-img{
+    position: relative;
+    margin-top: 20px;
+    border: 1px solid lightgray;
+    height: 150px;
+}
+
+.flex-container{
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+}
+
+.flex-container > div {
+    background-color: #f1f1f1;
+    margin: auto;
+    height: 300px;
+    width: 250px;
+    padding: auto;
+    font-size: 30px;
+}
+
+.flex-container .left-div{
+    margin-left: 140px;
+}
+
+.flex-container .right-div{
+    margin-right: 140px;
+}
