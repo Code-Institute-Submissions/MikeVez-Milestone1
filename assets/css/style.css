@@ -10,8 +10,11 @@ html,body{
 /*------------------------------TitleBar--------*/
 
 .title-bar{
+    font-family: 'Chewy', cursive;
+    font-size: 50px;
     margin: 40px 0 40px 0;
     text-align: center;
+    background-color: rgb(253, 231, 234);
     position: relative;
 }
 
@@ -38,14 +41,12 @@ html,body{
 }
 
 .navbar-nav a{                   /*required media query below 800px*/
-    margin: 0 30px 0 30px;
+    margin: 0 60px 0 60px;
     color: darkgrey;
 }
 
 .navbar-nav a:hover{
-   /* transform: skew(-3deg);*/
     font-weight: 500;
-
 }
 
 .nav-menu-wrapper{
@@ -53,7 +54,7 @@ html,body{
 }
 
 .navbar .nav-item .current{
-    font-weight: 400;
+    font-weight: 100;
 }
 
 
@@ -108,23 +109,23 @@ html,body{
 }
 
 
-/*------------------------------Studs Menu--------*/
+/*------------------------------Product Img--------*/
 .stud-main-area{
-    border: 3px solid pink;
+    margin-top: 20px;
+    border: 1px dotted pink;
 }
 
 .stud-flex-container{
-    margin-top: 20px;
-    text-align: center;
-    border: 2px dotted black;
-    
+    margin-top: 10px;
+    text-align: center;  
 }
 
 .flex-display .divider{
+    
     position: relative;
-    width: 2px;
-    height: 400px;
-    background-color: lightgrey;
+    width: 1px;
+    height: 185vh;
+    background-color: lightgrey; 
 }
 
 .stud-flex-container .flex-display{
@@ -133,10 +134,42 @@ html,body{
 }
 
 .stud-left-div, .stud-middle-div, .stud-right-div{
-    margin: 0 0 40px 0; 
+    margin: 0 10px 40px 10px; 
     position: relative;
     width: 300px;
     height: 300px;
-    border: 1px solid green;
 }
 
+.flex-display{
+    vertical-align: top;
+}
+
+.flex-display .size{
+    font-weight: 100;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.flex-display img{
+    padding: 0;
+    margin: 0;
+    display: block;
+    max-width: 300px;
+}
+
+/*------------------------------Footer--------*/
+
+.footer-divider{
+    position: relative;
+    margin-top: 70px;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(253, 231, 234);
+}
+
+.footer-main{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background-color: rgb(228, 228, 228);
+}
