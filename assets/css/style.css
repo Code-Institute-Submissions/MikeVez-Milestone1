@@ -78,7 +78,7 @@ html,body{
 }
 
 .main-flex-container > div {
-    background-color: #f1f1f1;
+    background-color: #b1aeae;
     margin: auto;
     height: 300px;
     width: 250px;
@@ -87,11 +87,11 @@ html,body{
 }
 
 .main-flex-container .left-div{
-    margin-left: 140px;
+    margin-left: 10%;
 }
 
 .main-flex-container .right-div{
-    margin-right: 140px;
+    margin-right: 10%;
 }
 
 .left-img, .middle-img, .right-img {
@@ -106,3 +106,37 @@ html,body{
     text-align: center;
     font-size: 20px;
 }
+
+
+/*------------------------------Studs Menu--------*/
+.stud-main-area{
+    border: 3px solid pink;
+}
+
+.stud-flex-container{
+    margin-top: 20px;
+    text-align: center;
+    border: 2px dotted black;
+    
+}
+
+.flex-display .divider{
+    position: relative;
+    width: 2px;
+    height: 400px;
+    background-color: lightgrey;
+}
+
+.stud-flex-container .flex-display{
+    margin: 0;
+    display: inline-block;
+}
+
+.stud-left-div, .stud-middle-div, .stud-right-div{
+    margin: 0 0 40px 0; 
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 1px solid green;
+}
+
