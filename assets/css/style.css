@@ -11,12 +11,12 @@ html,body{
 
 /*------------------------------TitleBar--------*/
 .header{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .title-bar-top{
-    background: url("../images/logoBG.png");
-    height: 35px;
+    background: url("../images/smallHeaderBG.png");
+    height: 20px;
     margin-top: 20px;  
     position: relative;
 }
@@ -36,8 +36,8 @@ html,body{
 }
 
 .title-bar-bottom{
-    background: url("../images/logoBG.png");
-    height: 35px;  
+    background: url("../images/smallHeaderBG.png");
+    height: 20px;  
     position: relative;
 }
 
@@ -54,30 +54,21 @@ html,body{
     height: 25px;    
     position: relative;
     margin-bottom: 0;
-    border-top: 1px solid lightgrey;
-    border-bottom: 1px solid lightgrey;
-    background-color: #fff;
+    background-color: rgba(250, 195, 212, 0.2);
 }
 
 .navbar-nav{
+    position: relative;
     margin: 0 auto 0 auto;
 }
 
-.navbar-nav a{                   /*required media query below 800px*/
+.navbar-nav a{              
     margin: 0 60px 0 60px;
     color: darkgrey;
 }
 
-.navbar-nav a:hover{
-    font-weight: 500;
-}
-
-.nav-menu-wrapper{
-    margin: 0 auto 0 auto;
-}
-
-.navbar .nav-item .current{
-    font-weight: 100;
+.navbar-toggler{
+    border-radius: .80rem;
 }
 
 
@@ -134,8 +125,7 @@ html,body{
 
 /*------------------------------Product Img--------*/
 .stud-main-area{
-    margin-top: 20px;
-    border: 1px dotted pink;
+    margin-top: 30px;
 }
 
 .stud-flex-container{
@@ -157,7 +147,7 @@ html,body{
 }
 
 .stud-left-div, .stud-middle-div, .stud-right-div{
-    margin: 0 10px 40px 10px; 
+    margin: 0 20px 40px 20px; 
     position: relative;
     width: 300px;
     height: 300px;
@@ -200,4 +190,20 @@ html,body{
     width: 100%;
     height: 150px;
     background-color: rgb(228, 228, 228);
+}
+
+
+/*------------------------------Media Queries--------*/
+
+@media(max-width: 575px){         /*screen smaller than shown size*/
+    .navbar{
+        height: 60px;
+    }
+
+    .flex-display .divider{
+        display: none;
+    }
+    
+    
+
 }
