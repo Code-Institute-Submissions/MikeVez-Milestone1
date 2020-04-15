@@ -7,11 +7,12 @@
 html,body{
     background-color:#fff;
     position: relative;
+    font-family: cursive;
 }
 
 /*------------------------------TitleBar--------*/
 .header{
-    margin-bottom: 20px;
+
 }
 
 .title-bar-top{
@@ -22,23 +23,45 @@ html,body{
 }
 
 .title-bar-logo{
+    
     font-size: 40px;
-    color: grey;
+    color: gray;
     font-family: 'Chewy', cursive;
     position: relative;
 }
 
+.title-bar-logo:hover{
+    text-decoration: none;
+    color: gray;
+}
+
+.title-bar-container{
+    padding-top: 10px;
+}
+
 .title-bar{
+    background-color: rgb(252, 106, 203, 0.2);
+    margin: 20px 0 20px 0;
     text-align: center;
-    height: 50px;
-    margin-bottom: 10px; 
+    height: 80px;
     position: relative;
+}
+
+.handmade{
+    margin: auto;
+    background-color: rgb(107, 248, 225, 0.2);
+    height: 25px;
+    color: gray;
+    font-size: 15px;
+    position: relative;
+    text-align: center;
 }
 
 .title-bar-bottom{
     background: url("../images/smallHeaderBG.png");
     height: 20px;  
     position: relative;
+    display: none;
 }
 
 .title-bar-logo, .title-bar-logo:hover{
@@ -51,10 +74,12 @@ html,body{
 
 .navbar {
     font-size: 14px;
-    height: 25px;    
+    height: 40px;    
     position: relative;
-    margin-bottom: 0;
-    background-color: rgba(250, 195, 212, 0.2);
+    margin-bottom: 10px;
+    /*background-color: rgba(255, 132, 171, 0.8);*/
+    border-top: 1px solid rgba(255, 132, 171, 0.8);
+    border-bottom: 1px solid rgba(255, 132, 171, 0.8);
 }
 
 .navbar-nav{
@@ -100,8 +125,13 @@ html,body{
     display: flex;
 }
 
+.main-flex-container a{
+    color: inherit;
+    text-decoration: none;
+}
+
+
 .main-flex-container > div {
-    background-color: #b1aeae;
     margin: auto;
     height: 300px;
     width: 250px;
@@ -119,7 +149,8 @@ html,body{
 
 .left-img, .middle-img, .right-img {
     position: relative;
-    border: 2px solid green;
+    border-radius: 50%;
+    border: 3px solid rgb(107, 248, 225, 0.6);
     height: 250px;
     width: 250px;
 }
@@ -186,45 +217,53 @@ html,body{
 
 /*------------------------------Footer--------*/
 
-.footer-divider{
+footer{
+    border-top: 3px solid rgba(255, 132, 171, 0.8);
+    background-color: #fff;
     position: relative;
-    margin-top: 70px;
-    width: 100%;
-    height: 5px;
-    background-color: rgb(253, 231, 234);
+    margin-top: 80px;
 }
 
-.footer-main{
-    position: relative;
-    width: 100%;
-    height: 150px;
-    background-color: rgb(228, 228, 228);
+footer > div{
+    margin-top: 20px;
 }
 
-.footer-details{
-    display: flex;
-    width: 100%;
+footer ul{
+    list-style: none;
+    padding-left: 10px;
 }
 
-.footer-info{
-    width: 100px;
-    height: 100px;
-    border: 1px solid sandybrown;
+footer .social-icon{
+    text-align: center;
+    background-color: rgb(107, 248, 225, 0.6);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
 }
 
-.social-icons{
-    float: right;
-    width: 100px;
-    height: 100px;
-    border: 1px solid seagreen;
+.social-icon-container ul li{
+    display:  inline-block;
 }
+
+footer .social-icon img{
+    margin: 7px auto 0 auto;
+    width: 35px;
+    height: 35px;
+}
+
+.social-icon li a img :hover{
+    transition: all 0.35s ease-in;
+}
+
 
 
 /*------------------------------Media Queries--------*/
 
-@media(max-width: 575px){         /*screen smaller than shown size*/
+/*screen size smaller than shown*/
+@media(max-width: 575px){         
     .navbar{
         height: 60px;
+        background-color: rgba(255, 132, 171, 0.8);
     }
 
     .navbar-brand{
@@ -238,7 +277,34 @@ html,body{
     .flex-display .divider{
         display: none;
     }
-    
-    
 
+    .stud-flex-container{
+    margin-top: 220px;
+    }
+
+    .header .handmade{
+    display: none;
+    }
+
+    .title-bar{
+        padding-top: 0;
+    }
+    
+}
+
+@media(max-width: 1000px){
+    
+    .main-flex-container{
+ 
+    margin: 20px 0 0 0;
+    display: block;
+    }
+
+    .main-flex-container .left-div,
+    .main-flex-container .middle-div,
+    .main-flex-container .right-div{  
+        margin: 0 auto 20px auto;
+    }
+
+    
 }
