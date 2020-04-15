@@ -143,6 +143,19 @@ html,body{
     margin-left: 10%;
 }
 
+.main-flex-container .left-img,
+.main-flex-container .middle-img,
+.main-flex-container .right-img{
+    overflow: hidden;
+}
+
+.main-flex-container .left-div img{
+    width: 150%;
+    margin: auto;
+}
+
+
+
 .main-flex-container .right-div{
     margin-right: 10%;
 }
@@ -219,7 +232,7 @@ html,body{
 
 footer{
     border-top: 3px solid rgba(255, 132, 171, 0.8);
-    background-color: #fff;
+    background-color: rgb(107, 248, 225, 0.2);
     position: relative;
     margin-top: 80px;
 }
