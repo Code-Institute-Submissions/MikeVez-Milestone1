@@ -88,10 +88,9 @@ html,body{
 
 .navbar {
     font-size: 14px;
-    height: 40px;    
+    height: 30px;    
     position: relative;
-    margin-bottom: 10px;
-    /*background-color: rgba(255, 132, 171, 0.8);*/
+    margin: 10px 0 10px 0;
     border-top: 1px solid rgba(255, 132, 171, 0.8);
     border-bottom: 1px solid rgba(255, 132, 171, 0.8);
 }
@@ -175,7 +174,7 @@ html,body{
 }
 
 
-.left-img, .middle-img, .right-img {
+.left-img, .middle-img, .right-img{
     position: relative;
     border-radius: 50%;
     height: 200px;
@@ -204,7 +203,14 @@ html,body{
     
     position: relative;
     width: 1px;
-    height: 185vh;
+    height: 160vh;
+    background-color: lightgrey; 
+}
+
+.flex-display .divider-necklace{
+    height: 100vh;
+    position: relative;
+    width: 1px;
     background-color: lightgrey; 
 }
 
@@ -216,14 +222,10 @@ html,body{
 .stud-left-div, .stud-middle-div, .stud-right-div{
     margin: 0 20px 40px 20px; 
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
 }
 
-.necklace{
-    width: 500px !important;
-    height: 500px !important;
-}
 
 .flex-display{
     vertical-align: top;
@@ -240,6 +242,17 @@ html,body{
     margin: 0;
     display: block;
     max-width: 300px;
+}
+
+.flex-display .necklace-left,
+.flex-display .necklace-right{
+    width: 400px   !important;
+    height: 400px   !important;
+}
+
+.flex-display .necklace-left img,
+.flex-display .necklace-right img{
+    max-width: 400px    !important;
 }
 
 /*------------------------------Footer--------*/
@@ -268,7 +281,7 @@ footer .container ul li a{
 
 footer .social-icon{
     text-align: center;
-    background-color: rgb(107, 248, 225, 0.6);
+    background-color: rgba(255, 132, 171, 0.8);
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -316,6 +329,13 @@ footer .social-icon img{
     display: inline;
     }
 
+    .main-img{
+        overflow: hidden;
+    }
+    .main-img img{
+        width: 200%;
+    }
+
     .flex-display .divider{
         display: none;
     }
@@ -330,6 +350,10 @@ footer .social-icon img{
 
     .title-bar{
         padding-top: 0;
+    }
+
+    footer .follow-me{
+        margin-top: 20px;
     }
     
 }
