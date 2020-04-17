@@ -1,35 +1,38 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+# First Milestone Project
+***
+## Phat Poly Handmade Jewellery Website
+***
+### Site Description
+The idea was to create a website to display jewellery. The site would be divided amongst 4 pages; a home page and 3 
+product pages to display the 3 differnt types of jewellery (studs, dangles and necklaces). The site itself uses bright
+pastel colours to keep in theme with the colourful jewellery. This site will also function as a shop where customers 
+can purchase the products.
 
-Welcome MikeVez,
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+### UX
+A prototype layout was constructed using Adobe xD software. Displayed below is the
+first prototype for the layout without the final colours.
 
-## Gitpod Reminders
+![website prototype](assets/images/readmeimages/readmeFullsite.jpg)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The final website design used Bootstrap in the nav bar in order to simplify 
+the layout on a mobile device by collapsing the navigation menu and in the footer
+to change the display depending on the screen size.
 
-`python3 -m http.server`
+The font used in the main logo 'Phat Poly' called 'Chewy' was imported from Google
+fonts.
 
-A blue button should appear to click: *Make Public*,
+The home page of the final website front end build is displayed below. All pictures
+and design was done by me.
 
-Another blue button should appear to click: *Open Browser*.
+![website final design](assets/images/readmeimages/readmeFullsite.jpg)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+***
+## Technologies used
+This front end project was built using HTML5 and CSS within Gitpod.
+Most of the code research was done using [w3schools.com](www.w3schools.com).
 
-A blue button should appear to click: *Make Public*,
-
-Another blue button should appear to click: *Open Browser*.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
-
-## Updates Since The Instructional Video
-
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!
+Bootstrap [(bootstrap)](www.getbootstrap.com) was used to control the collapsing
+navbar as well as in the footer to control the layout when displayed on a mobile
+device. Bootstrap was also used to control the widths of the display columns that
+held the products.
