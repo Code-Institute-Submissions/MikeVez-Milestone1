@@ -1,7 +1,7 @@
 # First Milestone Project
 ***
 ## Phat Poly Handmade Jewellery Website
-[Phat Poly deployment click here](httsp://mikevez.github.io/Milestone1/)
+[Phat Poly deployment click here](https://mikevez.github.io/Milestone1/)
 ***
 ### Site Description
 This project consisted of creating a Website that displays 3 types of handmade jewellery across 3 pages, studs, dangles and necklaces. The website is a Front End construction only and was assembled using only HTML5 and CSS.
