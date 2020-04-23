@@ -1,13 +1,12 @@
   
-@import url('https://fonts.googleapis.com/css?family=Spartan : 100,200,300,400,500,600,700');
-@import url('https://fonts.googleapis.com/css?family=Freckle+Face&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
 
 
 html,body{
     background-color:#fff;
     position: relative;
-    font-family: cursive;
+    font-family: Spartan;
     max-width: 1000px;
     margin: auto;
 }
@@ -117,6 +116,9 @@ html,body{
     display: none;
 }
 
+.nav-item .dropdown-item{
+    font-size: 14px;
+}
 
 
 
@@ -199,8 +201,8 @@ html,body{
     text-align: center;  
 }
 
-.flex-display .divider{
-    
+.flex-display .divider,
+.flex-display .divider-necklace{
     position: relative;
     width: 1px;
     height: 160vh;
@@ -246,13 +248,15 @@ html,body{
 
 .flex-display .necklace-left,
 .flex-display .necklace-right{
-    width: 400px   !important;
-    height: 400px   !important;
+    width: 400px;   
+    height: 400px; 
+    margin: 0 40px 40px 40px; 
+    position: relative;  
 }
 
 .flex-display .necklace-left img,
 .flex-display .necklace-right img{
-    max-width: 400px    !important;
+    max-width: 400px;
 }
 
 /*------------------------------Footer--------*/
@@ -312,10 +316,15 @@ footer .social-icon img{
 
 
 
-/*------------------------------Media Queries--------*/
+/*------------------------------Media Query--------*/
 
-/*screen size smaller than shown*/
-@media(max-width: 575px){         
+/*active when screen size smaller than size shown*/
+@media(max-width: 575px){ 
+
+    .navbar-nav{
+        padding-top: 10px;
+    }
+
     .navbar{
         height: 60px;
         background-color: rgba(255, 132, 171, 0.8);
@@ -326,7 +335,7 @@ footer .social-icon img{
     }
 
     .navbar .dropdown{
-    display: inline;
+        display: inline;
     }
 
     .main-img{
@@ -336,16 +345,39 @@ footer .social-icon img{
         width: 200%;
     }
 
-    .flex-display .divider{
+    .flex-display .divider,
+    .flex-display .divider-necklace{
         display: none;
     }
 
     .stud-flex-container{
-    margin-top: 220px;
+        margin-top: 220px;
+        overflow: hidden;
+    }
+
+    .flex-display .necklace-left,
+    .flex-display .necklace-right{
+        
+        margin-right: 0;
+        margin-left: 0;
+        width: 350px;
+        height: 350px;
+    }
+
+    .necklace-right .necklace-right-img,
+    .necklace-left .necklace-left-img{
+        margin-right: 0;
+        margin-left: 0;
+        width: 350px;
+    }
+
+    .flex-display .necklace-left img,
+    .flex-display .necklace-right img{
+        width: 350px;
     }
 
     .header .handmade{
-    display: none;
+        display: none;
     }
 
     .title-bar{
@@ -358,11 +390,13 @@ footer .social-icon img{
     
 }
 
+/*------------------------------Media Query--------*/
+
 @media(max-width: 800px){
     
     .main-flex-container{
-    margin: 20px 0 0 0;
-    display: block;
+        margin: 20px 0 0 0;
+        display: block;
     }
 
     .main-flex-container .left-img,
